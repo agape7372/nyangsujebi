@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>냥수제비 확률 정보</title>
+<style>
+  :root { --bg: #f7f4ec; --fg: #23262d; --dim: #5d6170; --line: #d9d3c4; --link: #2c5aa0; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #1d2129; --fg: #e8e4da; --dim: #a7abb6; --line: #3a404c; --link: #8fb4ec; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.7 system-ui, -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; word-break: keep-all; }
+  main { max-width: 680px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 24px; margin: 0 0 4px; }
+  h2 { font-size: 18px; margin: 32px 0 8px; padding-top: 16px; border-top: 1px solid var(--line); }
+  p, li { margin: 6px 0; }
+  .dim { color: var(--dim); font-size: 14px; }
+  .wrap { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; min-width: 560px; font-size: 14px; }
+  th, td { border: 1px solid var(--line); padding: 6px 8px; text-align: left; vertical-align: top; }
+</style>
+</head>
+<body>
+<main>
+<h1>냥수제비 확률 정보</h1>
+<p class="dim">앱: 냥수제비 (com.zaballgam.nyangsujebi) · 운영: 감자볼 스튜디오</p>
+<p><b>확률형 아이템 포함</b></p>
+<p>뽑기(조개 열기)는 등급을 먼저 정하고, 그 등급 돌 가운데 하나를 고릅니다. 같은 등급 안에서는 같은 확률입니다(진주 뽑기의 「이번 주 조개」 한 돌만 예외, 4절). 게임 안 확률은 상점 뽑기 탭의 i 단추에서도 봅니다.</p>
+
+<h2>1. 등급 확률</h2>
+<div class="wrap">
+<table>
+  <tr><th>뽑기</th><th>E</th><th>D</th><th>C</th><th>B</th><th>A</th><th>S</th><th>SS</th><th>SS+</th></tr>
+  <tr><td>진주 뽑기</td><td>42.500%</td><td>23.800%</td><td>10.200%</td><td>15.000%</td><td>3.900%</td><td>2.100%</td><td>1.500%</td><td>1.000%</td></tr>
+  <tr><td>동전 뽑기</td><td>69.000%</td><td>17.500%</td><td>7.500%</td><td>5.000%</td><td>1.000%</td><td>0%</td><td>0%</td><td>0%</td></tr>
+</table>
+</div>
+
+<h2>2. 천장 · 확정</h2>
+<div class="wrap">
+<table>
+  <tr><th>항목</th><th>값</th></tr>
+  <tr><td>천장</td><td>진주 뽑기 80회째는 SS 이상 확정(그 안에 SS 이상이 나오면 다시 1회부터)</td></tr>
+  <tr><td>천장 회차 SS : SS+</td><td>60 : 40</td></tr>
+  <tr><td>11회</td><td>진주 뽑기 11회 묶음에 B 이상 1개 확정</td></tr>
+  <tr><td>동전 뽑기</td><td>천장 · 11회 확정 없음</td></tr>
+  <tr><td>무료 뽑기(광고)</td><td>진주 뽑기와 같은 확률 · 같은 천장</td></tr>
+</table>
+</div>
+
+<h2>3. 돌 하나당 확률</h2>
+<p>뽑기에 드는 돌은 뽑기 전용 돌과 열린 물가의 돌입니다. 물가가 열릴수록 돌이 늘어 돌 하나당 확률이 바뀝니다. 칸 = 그 물가까지 열렸을 때. 진주 뽑기 S 이상은 그 등급에 이번 주 조개가 없는 주의 값입니다(있는 주는 4절).</p>
+<h3>진주 뽑기</h3>
+<div class="wrap">
+<table>
+  <tr><th>돌</th><th>등급</th><th>앞마을 개울까지</th><th>연꽃 저수지까지</th><th>큰 강 나루까지</th><th>몽돌 바닷가까지</th><th>겨울 호수까지</th><th>달빛 호수까지</th></tr>
+  <tr><td>옥토끼돌</td><td>SS+</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>0.0417%</td></tr>
+  <tr><td>호랑이돌</td><td>SS+</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0417%</td></tr>
+  <tr><td>청룡</td><td>SS+</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0417%</td></tr>
+  <tr><td>주작</td><td>SS+</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0417%</td></tr>
+  <tr><td>봉황</td><td>SS+</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0417%</td></tr>
+  <tr><td>구미호</td><td>SS+</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0417%</td></tr>
+  <tr><td>도깨비</td><td>SS+</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0417%</td></tr>
+  <tr><td>여의주</td><td>SS+</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0417%</td></tr>
+  <tr><td>왕관냥</td><td>SS+</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0417%</td></tr>
+  <tr><td>황금냥</td><td>SS+</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0417%</td></tr>
+  <tr><td>장군냥</td><td>SS+</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0417%</td></tr>
+  <tr><td>임금냥</td><td>SS+</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0417%</td></tr>
+  <tr><td>은하</td><td>SS+</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0417%</td></tr>
+  <tr><td>백호</td><td>SS+</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0417%</td></tr>
+  <tr><td>유니콘</td><td>SS+</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0417%</td></tr>
+  <tr><td>우주냥</td><td>SS+</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0417%</td></tr>
+  <tr><td>마법사냥</td><td>SS+</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0417%</td></tr>
+  <tr><td>인어냥</td><td>SS+</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0417%</td></tr>
+  <tr><td>천사냥</td><td>SS+</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0417%</td></tr>
+  <tr><td>선녀</td><td>SS+</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0417%</td></tr>
+  <tr><td>구름냥</td><td>SS+</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0417%</td></tr>
+  <tr><td>오작교</td><td>SS+</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0417%</td></tr>
+  <tr><td>해님달님</td><td>SS+</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0417%</td></tr>
+  <tr><td>파도냥</td><td>SS+</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0435%</td><td>0.0417%</td></tr>
+  <tr><td>냥발돌</td><td>SS</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td></tr>
+  <tr><td>운석</td><td>SS</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td></tr>
+  <tr><td>해태돌</td><td>SS</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td></tr>
+  <tr><td>황철석</td><td>SS</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td></tr>
+  <tr><td>삼족오돌</td><td>SS</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td></tr>
+  <tr><td>기린</td><td>SS</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td></tr>
+  <tr><td>산신령</td><td>SS</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td></tr>
+  <tr><td>금두꺼비</td><td>SS</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td></tr>
+  <tr><td>금거북</td><td>SS</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td></tr>
+  <tr><td>청자</td><td>SS</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td></tr>
+  <tr><td>거북선</td><td>SS</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td></tr>
+  <tr><td>다보탑</td><td>SS</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td></tr>
+  <tr><td>일식</td><td>SS</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td></tr>
+  <tr><td>화산</td><td>SS</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td></tr>
+  <tr><td>판다돌</td><td>SS</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td></tr>
+  <tr><td>레서판다돌</td><td>SS</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td></tr>
+  <tr><td>펭귄돌</td><td>SS</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td></tr>
+  <tr><td>바다코끼리돌</td><td>SS</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td></tr>
+  <tr><td>우파루파돌</td><td>SS</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td></tr>
+  <tr><td>앵무새돌</td><td>SS</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td></tr>
+  <tr><td>딱따구리돌</td><td>SS</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td></tr>
+  <tr><td>동박새돌</td><td>SS</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td></tr>
+  <tr><td>무당벌레돌</td><td>SS</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td></tr>
+  <tr><td>장수풍뎅이돌</td><td>SS</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td></tr>
+  <tr><td>트리케라톱스돌</td><td>SS</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td></tr>
+  <tr><td>사자돌</td><td>SS</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td></tr>
+  <tr><td>범고래돌</td><td>SS</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td></tr>
+  <tr><td>공작돌</td><td>SS</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td></tr>
+  <tr><td>눈표범돌</td><td>SS</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td></tr>
+  <tr><td>티라노돌</td><td>SS</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td></tr>
+  <tr><td>카멜레온돌</td><td>SS</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td></tr>
+  <tr><td>열기구돌</td><td>SS</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td></tr>
+  <tr><td>종다리돌</td><td>SS</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td></tr>
+  <tr><td>날치돌</td><td>SS</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td></tr>
+  <tr><td>돛단배돌</td><td>SS</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td></tr>
+  <tr><td>돌고래돌</td><td>SS</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td><td>0.0417%</td></tr>
+  <tr><td>형석</td><td>S</td><td>-</td><td>-</td><td>-</td><td>-</td><td>0.0583%</td><td>0.0553%</td></tr>
+  <tr><td>월장석</td><td>S</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>0.0553%</td></tr>
+  <tr><td>달항아리돌</td><td>S</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>0.0553%</td></tr>
+  <tr><td>공룡알</td><td>S</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0583%</td><td>0.0553%</td></tr>
+  <tr><td>녹주석</td><td>S</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0583%</td><td>0.0553%</td></tr>
+  <tr><td>삼색이돌</td><td>S</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0583%</td><td>0.0553%</td></tr>
+  <tr><td>첨성대돌</td><td>S</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0583%</td><td>0.0553%</td></tr>
+  <tr><td>불가사리</td><td>S</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0583%</td><td>0.0553%</td></tr>
+  <tr><td>돌하르방</td><td>S</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0583%</td><td>0.0553%</td></tr>
+  <tr><td>범종</td><td>S</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0583%</td><td>0.0553%</td></tr>
+  <tr><td>옥새</td><td>S</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0583%</td><td>0.0553%</td></tr>
+  <tr><td>낮잠냥돌</td><td>S</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0583%</td><td>0.0553%</td></tr>
+  <tr><td>멍멍이돌</td><td>S</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0583%</td><td>0.0553%</td></tr>
+  <tr><td>퍼그돌</td><td>S</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0583%</td><td>0.0553%</td></tr>
+  <tr><td>양돌</td><td>S</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0583%</td><td>0.0553%</td></tr>
+  <tr><td>알파카돌</td><td>S</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0583%</td><td>0.0553%</td></tr>
+  <tr><td>햄스터돌</td><td>S</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0583%</td><td>0.0553%</td></tr>
+  <tr><td>고슴도치돌</td><td>S</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0583%</td><td>0.0553%</td></tr>
+  <tr><td>다람쥐돌</td><td>S</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0583%</td><td>0.0553%</td></tr>
+  <tr><td>두더지돌</td><td>S</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0583%</td><td>0.0553%</td></tr>
+  <tr><td>카피바라돌</td><td>S</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0583%</td><td>0.0553%</td></tr>
+  <tr><td>코알라돌</td><td>S</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0583%</td><td>0.0553%</td></tr>
+  <tr><td>너구리돌</td><td>S</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0583%</td><td>0.0553%</td></tr>
+  <tr><td>나무늘보돌</td><td>S</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0583%</td><td>0.0553%</td></tr>
+  <tr><td>원숭이돌</td><td>S</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0583%</td><td>0.0553%</td></tr>
+  <tr><td>꽃게돌</td><td>S</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0583%</td><td>0.0553%</td></tr>
+  <tr><td>개복치돌</td><td>S</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0583%</td><td>0.0553%</td></tr>
+  <tr><td>하마돌</td><td>S</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0583%</td><td>0.0553%</td></tr>
+  <tr><td>참새돌</td><td>S</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0583%</td><td>0.0553%</td></tr>
+  <tr><td>꼬꼬닭돌</td><td>S</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0583%</td><td>0.0553%</td></tr>
+  <tr><td>꿀벌돌</td><td>S</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0583%</td><td>0.0553%</td></tr>
+  <tr><td>코끼리돌</td><td>S</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0583%</td><td>0.0553%</td></tr>
+  <tr><td>비버돌</td><td>S</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0583%</td><td>0.0553%</td></tr>
+  <tr><td>사막여우돌</td><td>S</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0583%</td><td>0.0553%</td></tr>
+  <tr><td>미어캣돌</td><td>S</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0583%</td><td>0.0553%</td></tr>
+  <tr><td>오리너구리돌</td><td>S</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0583%</td><td>0.0553%</td></tr>
+  <tr><td>북극곰돌</td><td>S</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0583%</td><td>0.0553%</td></tr>
+  <tr><td>홍학돌</td><td>S</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0600%</td><td>0.0583%</td><td>0.0553%</td></tr>
+  <tr><td>사금</td><td>A</td><td>0.390%</td><td>0.325%</td><td>0.300%</td><td>0.279%</td><td>0.260%</td><td>0.244%</td></tr>
+  <tr><td>옥</td><td>A</td><td>-</td><td>0.325%</td><td>0.300%</td><td>0.279%</td><td>0.260%</td><td>0.244%</td></tr>
+  <tr><td>자수정</td><td>A</td><td>-</td><td>0.325%</td><td>0.300%</td><td>0.279%</td><td>0.260%</td><td>0.244%</td></tr>
+  <tr><td>암모나이트</td><td>A</td><td>0.390%</td><td>0.325%</td><td>0.300%</td><td>0.279%</td><td>0.260%</td><td>0.244%</td></tr>
+  <tr><td>삼엽충</td><td>A</td><td>0.390%</td><td>0.325%</td><td>0.300%</td><td>0.279%</td><td>0.260%</td><td>0.244%</td></tr>
+  <tr><td>석류석</td><td>A</td><td>-</td><td>-</td><td>0.300%</td><td>0.279%</td><td>0.260%</td><td>0.244%</td></tr>
+  <tr><td>청금석</td><td>A</td><td>-</td><td>-</td><td>-</td><td>0.279%</td><td>0.260%</td><td>0.244%</td></tr>
+  <tr><td>상자냥돌</td><td>A</td><td>0.390%</td><td>0.325%</td><td>0.300%</td><td>0.279%</td><td>0.260%</td><td>0.244%</td></tr>
+  <tr><td>상어이빨 화석</td><td>A</td><td>0.390%</td><td>0.325%</td><td>0.300%</td><td>0.279%</td><td>0.260%</td><td>0.244%</td></tr>
+  <tr><td>전기석</td><td>A</td><td>0.390%</td><td>0.325%</td><td>0.300%</td><td>0.279%</td><td>0.260%</td><td>0.244%</td></tr>
+  <tr><td>사파이어</td><td>A</td><td>-</td><td>-</td><td>-</td><td>-</td><td>0.260%</td><td>0.244%</td></tr>
+  <tr><td>오팔</td><td>A</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>0.244%</td></tr>
+  <tr><td>루비</td><td>A</td><td>0.390%</td><td>0.325%</td><td>0.300%</td><td>0.279%</td><td>0.260%</td><td>0.244%</td></tr>
+  <tr><td>황옥</td><td>A</td><td>0.390%</td><td>0.325%</td><td>0.300%</td><td>0.279%</td><td>0.260%</td><td>0.244%</td></tr>
+  <tr><td>공룡 발자국</td><td>A</td><td>0.390%</td><td>0.325%</td><td>0.300%</td><td>0.279%</td><td>0.260%</td><td>0.244%</td></tr>
+  <tr><td>백조돌</td><td>A</td><td>0.390%</td><td>0.325%</td><td>0.300%</td><td>0.279%</td><td>0.260%</td><td>0.244%</td></tr>
+  <tr><td>고양이돌</td><td>B</td><td>1.500%</td><td>1.071%</td><td>0.882%</td><td>0.750%</td><td>0.682%</td><td>0.625%</td></tr>
+  <tr><td>운모</td><td>B</td><td>1.500%</td><td>1.071%</td><td>0.882%</td><td>0.750%</td><td>0.682%</td><td>0.625%</td></tr>
+  <tr><td>마노</td><td>B</td><td>-</td><td>1.071%</td><td>0.882%</td><td>0.750%</td><td>0.682%</td><td>0.625%</td></tr>
+  <tr><td>잉어비늘돌</td><td>B</td><td>-</td><td>1.071%</td><td>0.882%</td><td>0.750%</td><td>0.682%</td><td>0.625%</td></tr>
+  <tr><td>흑요석</td><td>B</td><td>1.500%</td><td>1.071%</td><td>0.882%</td><td>0.750%</td><td>0.682%</td><td>0.625%</td></tr>
+  <tr><td>호박</td><td>B</td><td>1.500%</td><td>1.071%</td><td>0.882%</td><td>0.750%</td><td>0.682%</td><td>0.625%</td></tr>
+  <tr><td>벽옥</td><td>B</td><td>-</td><td>1.071%</td><td>0.882%</td><td>0.750%</td><td>0.682%</td><td>0.625%</td></tr>
+  <tr><td>규화목</td><td>B</td><td>-</td><td>-</td><td>0.882%</td><td>0.750%</td><td>0.682%</td><td>0.625%</td></tr>
+  <tr><td>자철석</td><td>B</td><td>-</td><td>-</td><td>0.882%</td><td>0.750%</td><td>0.682%</td><td>0.625%</td></tr>
+  <tr><td>고래돌</td><td>B</td><td>-</td><td>-</td><td>-</td><td>0.750%</td><td>0.682%</td><td>0.625%</td></tr>
+  <tr><td>산호 화석</td><td>B</td><td>-</td><td>-</td><td>-</td><td>0.750%</td><td>0.682%</td><td>0.625%</td></tr>
+  <tr><td>수정</td><td>B</td><td>-</td><td>-</td><td>-</td><td>-</td><td>0.682%</td><td>0.625%</td></tr>
+  <tr><td>거북돌</td><td>B</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>0.625%</td></tr>
+  <tr><td>냥꼬리돌</td><td>B</td><td>1.500%</td><td>1.071%</td><td>0.882%</td><td>0.750%</td><td>0.682%</td><td>0.625%</td></tr>
+  <tr><td>팽이돌</td><td>B</td><td>1.500%</td><td>1.071%</td><td>0.882%</td><td>0.750%</td><td>0.682%</td><td>0.625%</td></tr>
+  <tr><td>맷돌돌</td><td>B</td><td>1.500%</td><td>1.071%</td><td>0.882%</td><td>0.750%</td><td>0.682%</td><td>0.625%</td></tr>
+  <tr><td>고사리 화석</td><td>B</td><td>1.500%</td><td>1.071%</td><td>0.882%</td><td>0.750%</td><td>0.682%</td><td>0.625%</td></tr>
+  <tr><td>공작석</td><td>B</td><td>1.500%</td><td>1.071%</td><td>0.882%</td><td>0.750%</td><td>0.682%</td><td>0.625%</td></tr>
+  <tr><td>장미석영</td><td>B</td><td>-</td><td>1.071%</td><td>0.882%</td><td>0.750%</td><td>0.682%</td><td>0.625%</td></tr>
+  <tr><td>호안석</td><td>B</td><td>-</td><td>-</td><td>0.882%</td><td>0.750%</td><td>0.682%</td><td>0.625%</td></tr>
+  <tr><td>터키석</td><td>B</td><td>-</td><td>-</td><td>-</td><td>0.750%</td><td>0.682%</td><td>0.625%</td></tr>
+  <tr><td>눈꽃 흑요석</td><td>B</td><td>-</td><td>-</td><td>-</td><td>-</td><td>0.682%</td><td>0.625%</td></tr>
+  <tr><td>사슴돌</td><td>B</td><td>1.500%</td><td>1.071%</td><td>0.882%</td><td>0.750%</td><td>0.682%</td><td>0.625%</td></tr>
+  <tr><td>늑대돌</td><td>B</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>0.625%</td></tr>
+  <tr><td>하트돌</td><td>C</td><td>0.850%</td><td>0.729%</td><td>0.680%</td><td>0.637%</td><td>0.600%</td><td>0.567%</td></tr>
+  <tr><td>식빵돌</td><td>C</td><td>0.850%</td><td>0.729%</td><td>0.680%</td><td>0.637%</td><td>0.600%</td><td>0.567%</td></tr>
+  <tr><td>연잎돌</td><td>C</td><td>-</td><td>0.729%</td><td>0.680%</td><td>0.637%</td><td>0.600%</td><td>0.567%</td></tr>
+  <tr><td>구름돌</td><td>C</td><td>-</td><td>0.729%</td><td>0.680%</td><td>0.637%</td><td>0.600%</td><td>0.567%</td></tr>
+  <tr><td>수달돌</td><td>C</td><td>-</td><td>-</td><td>0.680%</td><td>0.637%</td><td>0.600%</td><td>0.567%</td></tr>
+  <tr><td>바다유리</td><td>C</td><td>-</td><td>-</td><td>-</td><td>0.637%</td><td>0.600%</td><td>0.567%</td></tr>
+  <tr><td>눈사람돌</td><td>C</td><td>-</td><td>-</td><td>-</td><td>-</td><td>0.600%</td><td>0.567%</td></tr>
+  <tr><td>부엉이돌</td><td>C</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>0.567%</td></tr>
+  <tr><td>털실뭉치돌</td><td>C</td><td>0.850%</td><td>0.729%</td><td>0.680%</td><td>0.637%</td><td>0.600%</td><td>0.567%</td></tr>
+  <tr><td>생쥐돌</td><td>C</td><td>0.850%</td><td>0.729%</td><td>0.680%</td><td>0.637%</td><td>0.600%</td><td>0.567%</td></tr>
+  <tr><td>방울돌</td><td>C</td><td>0.850%</td><td>0.729%</td><td>0.680%</td><td>0.637%</td><td>0.600%</td><td>0.567%</td></tr>
+  <tr><td>윷가락돌</td><td>C</td><td>0.850%</td><td>0.729%</td><td>0.680%</td><td>0.637%</td><td>0.600%</td><td>0.567%</td></tr>
+  <tr><td>토끼돌</td><td>C</td><td>0.850%</td><td>0.729%</td><td>0.680%</td><td>0.637%</td><td>0.600%</td><td>0.567%</td></tr>
+  <tr><td>여우돌</td><td>C</td><td>0.850%</td><td>0.729%</td><td>0.680%</td><td>0.637%</td><td>0.600%</td><td>0.567%</td></tr>
+  <tr><td>곰돌</td><td>C</td><td>0.850%</td><td>0.729%</td><td>0.680%</td><td>0.637%</td><td>0.600%</td><td>0.567%</td></tr>
+  <tr><td>달팽이돌</td><td>C</td><td>0.850%</td><td>0.729%</td><td>0.680%</td><td>0.637%</td><td>0.600%</td><td>0.567%</td></tr>
+  <tr><td>금붕어돌</td><td>C</td><td>0.850%</td><td>0.729%</td><td>0.680%</td><td>0.637%</td><td>0.600%</td><td>0.567%</td></tr>
+  <tr><td>병아리돌</td><td>C</td><td>0.850%</td><td>0.729%</td><td>0.680%</td><td>0.637%</td><td>0.600%</td><td>0.567%</td></tr>
+  <tr><td>콩돌</td><td>D</td><td>2.164%</td><td>1.488%</td><td>1.253%</td><td>1.133%</td><td>0.952%</td><td>0.881%</td></tr>
+  <tr><td>개구리돌</td><td>D</td><td>2.164%</td><td>1.488%</td><td>1.253%</td><td>1.133%</td><td>0.952%</td><td>0.881%</td></tr>
+  <tr><td>현무암</td><td>D</td><td>2.164%</td><td>1.488%</td><td>1.253%</td><td>1.133%</td><td>0.952%</td><td>0.881%</td></tr>
+  <tr><td>오리돌</td><td>D</td><td>-</td><td>1.488%</td><td>1.253%</td><td>1.133%</td><td>0.952%</td><td>0.881%</td></tr>
+  <tr><td>주먹밥돌</td><td>D</td><td>-</td><td>1.488%</td><td>1.253%</td><td>1.133%</td><td>0.952%</td><td>0.881%</td></tr>
+  <tr><td>두부돌</td><td>D</td><td>2.164%</td><td>1.488%</td><td>1.253%</td><td>1.133%</td><td>0.952%</td><td>0.881%</td></tr>
+  <tr><td>도토리돌</td><td>D</td><td>2.164%</td><td>1.488%</td><td>1.253%</td><td>1.133%</td><td>0.952%</td><td>0.881%</td></tr>
+  <tr><td>알밤돌</td><td>D</td><td>2.164%</td><td>1.488%</td><td>1.253%</td><td>1.133%</td><td>0.952%</td><td>0.881%</td></tr>
+  <tr><td>연근돌</td><td>D</td><td>-</td><td>1.488%</td><td>1.253%</td><td>1.133%</td><td>0.952%</td><td>0.881%</td></tr>
+  <tr><td>올챙이돌</td><td>D</td><td>-</td><td>1.488%</td><td>1.253%</td><td>1.133%</td><td>0.952%</td><td>0.881%</td></tr>
+  <tr><td>나룻배돌</td><td>D</td><td>-</td><td>-</td><td>1.253%</td><td>1.133%</td><td>0.952%</td><td>0.881%</td></tr>
+  <tr><td>메기돌</td><td>D</td><td>-</td><td>-</td><td>1.253%</td><td>1.133%</td><td>0.952%</td><td>0.881%</td></tr>
+  <tr><td>갈매기알돌</td><td>D</td><td>-</td><td>-</td><td>-</td><td>1.133%</td><td>0.952%</td><td>0.881%</td></tr>
+  <tr><td>곶감돌</td><td>D</td><td>-</td><td>-</td><td>-</td><td>-</td><td>0.952%</td><td>0.881%</td></tr>
+  <tr><td>호빵돌</td><td>D</td><td>-</td><td>-</td><td>-</td><td>-</td><td>0.952%</td><td>0.881%</td></tr>
+  <tr><td>군고구마돌</td><td>D</td><td>-</td><td>-</td><td>-</td><td>-</td><td>0.952%</td><td>0.881%</td></tr>
+  <tr><td>송편돌</td><td>D</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>0.881%</td></tr>
+  <tr><td>공깃돌</td><td>D</td><td>2.164%</td><td>1.488%</td><td>1.253%</td><td>1.133%</td><td>0.952%</td><td>0.881%</td></tr>
+  <tr><td>마늘돌</td><td>D</td><td>2.164%</td><td>1.488%</td><td>1.253%</td><td>1.133%</td><td>0.952%</td><td>0.881%</td></tr>
+  <tr><td>솔방울돌</td><td>D</td><td>2.164%</td><td>1.488%</td><td>1.253%</td><td>1.133%</td><td>0.952%</td><td>0.881%</td></tr>
+  <tr><td>단추돌</td><td>D</td><td>2.164%</td><td>1.488%</td><td>1.253%</td><td>1.133%</td><td>0.952%</td><td>0.881%</td></tr>
+  <tr><td>감자돌</td><td>D</td><td>2.164%</td><td>1.488%</td><td>1.253%</td><td>1.133%</td><td>0.952%</td><td>0.881%</td></tr>
+  <tr><td>버섯돌</td><td>D</td><td>-</td><td>1.488%</td><td>1.253%</td><td>1.133%</td><td>0.952%</td><td>0.881%</td></tr>
+  <tr><td>만두돌</td><td>D</td><td>-</td><td>-</td><td>1.253%</td><td>1.133%</td><td>0.952%</td><td>0.881%</td></tr>
+  <tr><td>귤돌</td><td>D</td><td>-</td><td>-</td><td>-</td><td>1.133%</td><td>0.952%</td><td>0.881%</td></tr>
+  <tr><td>찹쌀떡돌</td><td>D</td><td>-</td><td>-</td><td>-</td><td>-</td><td>0.952%</td><td>0.881%</td></tr>
+  <tr><td>별사탕돌</td><td>D</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>0.881%</td></tr>
+  <tr><td>조약돌</td><td>E</td><td>7.083%</td><td>4.250%</td><td>3.036%</td><td>2.361%</td><td>2.024%</td><td>1.771%</td></tr>
+  <tr><td>납작돌</td><td>E</td><td>7.083%</td><td>4.250%</td><td>3.036%</td><td>2.361%</td><td>2.024%</td><td>1.771%</td></tr>
+  <tr><td>차돌</td><td>E</td><td>7.083%</td><td>4.250%</td><td>3.036%</td><td>2.361%</td><td>2.024%</td><td>1.771%</td></tr>
+  <tr><td>화강암</td><td>E</td><td>7.083%</td><td>4.250%</td><td>3.036%</td><td>2.361%</td><td>2.024%</td><td>1.771%</td></tr>
+  <tr><td>강자갈</td><td>E</td><td>-</td><td>4.250%</td><td>3.036%</td><td>2.361%</td><td>2.024%</td><td>1.771%</td></tr>
+  <tr><td>달걀돌</td><td>E</td><td>-</td><td>4.250%</td><td>3.036%</td><td>2.361%</td><td>2.024%</td><td>1.771%</td></tr>
+  <tr><td>점판암</td><td>E</td><td>-</td><td>4.250%</td><td>3.036%</td><td>2.361%</td><td>2.024%</td><td>1.771%</td></tr>
+  <tr><td>물방울돌</td><td>E</td><td>7.083%</td><td>4.250%</td><td>3.036%</td><td>2.361%</td><td>2.024%</td><td>1.771%</td></tr>
+  <tr><td>사암</td><td>E</td><td>-</td><td>-</td><td>3.036%</td><td>2.361%</td><td>2.024%</td><td>1.771%</td></tr>
+  <tr><td>편마암</td><td>E</td><td>-</td><td>-</td><td>3.036%</td><td>2.361%</td><td>2.024%</td><td>1.771%</td></tr>
+  <tr><td>이암</td><td>E</td><td>-</td><td>-</td><td>3.036%</td><td>2.361%</td><td>2.024%</td><td>1.771%</td></tr>
+  <tr><td>몽돌</td><td>E</td><td>-</td><td>-</td><td>-</td><td>2.361%</td><td>2.024%</td><td>1.771%</td></tr>
+  <tr><td>규암</td><td>E</td><td>-</td><td>-</td><td>-</td><td>2.361%</td><td>2.024%</td><td>1.771%</td></tr>
+  <tr><td>깨소금돌</td><td>E</td><td>-</td><td>-</td><td>-</td><td>2.361%</td><td>2.024%</td><td>1.771%</td></tr>
+  <tr><td>대리암</td><td>E</td><td>-</td><td>-</td><td>-</td><td>-</td><td>2.024%</td><td>1.771%</td></tr>
+  <tr><td>석회암</td><td>E</td><td>-</td><td>-</td><td>-</td><td>-</td><td>2.024%</td><td>1.771%</td></tr>
+  <tr><td>응회암</td><td>E</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>1.771%</td></tr>
+  <tr><td>흑연</td><td>E</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>1.771%</td></tr>
+  <tr><td>부싯돌</td><td>E</td><td>7.083%</td><td>4.250%</td><td>3.036%</td><td>2.361%</td><td>2.024%</td><td>1.771%</td></tr>
+  <tr><td>셰일</td><td>E</td><td>-</td><td>4.250%</td><td>3.036%</td><td>2.361%</td><td>2.024%</td><td>1.771%</td></tr>
+  <tr><td>역암</td><td>E</td><td>-</td><td>-</td><td>3.036%</td><td>2.361%</td><td>2.024%</td><td>1.771%</td></tr>
+  <tr><td>사문암</td><td>E</td><td>-</td><td>-</td><td>-</td><td>2.361%</td><td>2.024%</td><td>1.771%</td></tr>
+  <tr><td>안산암</td><td>E</td><td>-</td><td>-</td><td>-</td><td>-</td><td>2.024%</td><td>1.771%</td></tr>
+  <tr><td>부석</td><td>E</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>1.771%</td></tr>
+</table>
+</div>
+<h3>동전 뽑기</h3>
+<div class="wrap">
+<table>
+  <tr><th>돌</th><th>등급</th><th>앞마을 개울까지</th><th>연꽃 저수지까지</th><th>큰 강 나루까지</th><th>몽돌 바닷가까지</th><th>겨울 호수까지</th><th>달빛 호수까지</th></tr>
+  <tr><td>사금</td><td>A</td><td>0.100%</td><td>0.0833%</td><td>0.0769%</td><td>0.0714%</td><td>0.0667%</td><td>0.0625%</td></tr>
+  <tr><td>옥</td><td>A</td><td>-</td><td>0.0833%</td><td>0.0769%</td><td>0.0714%</td><td>0.0667%</td><td>0.0625%</td></tr>
+  <tr><td>자수정</td><td>A</td><td>-</td><td>0.0833%</td><td>0.0769%</td><td>0.0714%</td><td>0.0667%</td><td>0.0625%</td></tr>
+  <tr><td>암모나이트</td><td>A</td><td>0.100%</td><td>0.0833%</td><td>0.0769%</td><td>0.0714%</td><td>0.0667%</td><td>0.0625%</td></tr>
+  <tr><td>삼엽충</td><td>A</td><td>0.100%</td><td>0.0833%</td><td>0.0769%</td><td>0.0714%</td><td>0.0667%</td><td>0.0625%</td></tr>
+  <tr><td>석류석</td><td>A</td><td>-</td><td>-</td><td>0.0769%</td><td>0.0714%</td><td>0.0667%</td><td>0.0625%</td></tr>
+  <tr><td>청금석</td><td>A</td><td>-</td><td>-</td><td>-</td><td>0.0714%</td><td>0.0667%</td><td>0.0625%</td></tr>
+  <tr><td>상자냥돌</td><td>A</td><td>0.100%</td><td>0.0833%</td><td>0.0769%</td><td>0.0714%</td><td>0.0667%</td><td>0.0625%</td></tr>
+  <tr><td>상어이빨 화석</td><td>A</td><td>0.100%</td><td>0.0833%</td><td>0.0769%</td><td>0.0714%</td><td>0.0667%</td><td>0.0625%</td></tr>
+  <tr><td>전기석</td><td>A</td><td>0.100%</td><td>0.0833%</td><td>0.0769%</td><td>0.0714%</td><td>0.0667%</td><td>0.0625%</td></tr>
+  <tr><td>사파이어</td><td>A</td><td>-</td><td>-</td><td>-</td><td>-</td><td>0.0667%</td><td>0.0625%</td></tr>
+  <tr><td>오팔</td><td>A</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>0.0625%</td></tr>
+  <tr><td>루비</td><td>A</td><td>0.100%</td><td>0.0833%</td><td>0.0769%</td><td>0.0714%</td><td>0.0667%</td><td>0.0625%</td></tr>
+  <tr><td>황옥</td><td>A</td><td>0.100%</td><td>0.0833%</td><td>0.0769%</td><td>0.0714%</td><td>0.0667%</td><td>0.0625%</td></tr>
+  <tr><td>공룡 발자국</td><td>A</td><td>0.100%</td><td>0.0833%</td><td>0.0769%</td><td>0.0714%</td><td>0.0667%</td><td>0.0625%</td></tr>
+  <tr><td>백조돌</td><td>A</td><td>0.100%</td><td>0.0833%</td><td>0.0769%</td><td>0.0714%</td><td>0.0667%</td><td>0.0625%</td></tr>
+  <tr><td>고양이돌</td><td>B</td><td>0.500%</td><td>0.357%</td><td>0.294%</td><td>0.250%</td><td>0.227%</td><td>0.208%</td></tr>
+  <tr><td>운모</td><td>B</td><td>0.500%</td><td>0.357%</td><td>0.294%</td><td>0.250%</td><td>0.227%</td><td>0.208%</td></tr>
+  <tr><td>마노</td><td>B</td><td>-</td><td>0.357%</td><td>0.294%</td><td>0.250%</td><td>0.227%</td><td>0.208%</td></tr>
+  <tr><td>잉어비늘돌</td><td>B</td><td>-</td><td>0.357%</td><td>0.294%</td><td>0.250%</td><td>0.227%</td><td>0.208%</td></tr>
+  <tr><td>흑요석</td><td>B</td><td>0.500%</td><td>0.357%</td><td>0.294%</td><td>0.250%</td><td>0.227%</td><td>0.208%</td></tr>
+  <tr><td>호박</td><td>B</td><td>0.500%</td><td>0.357%</td><td>0.294%</td><td>0.250%</td><td>0.227%</td><td>0.208%</td></tr>
+  <tr><td>벽옥</td><td>B</td><td>-</td><td>0.357%</td><td>0.294%</td><td>0.250%</td><td>0.227%</td><td>0.208%</td></tr>
+  <tr><td>규화목</td><td>B</td><td>-</td><td>-</td><td>0.294%</td><td>0.250%</td><td>0.227%</td><td>0.208%</td></tr>
+  <tr><td>자철석</td><td>B</td><td>-</td><td>-</td><td>0.294%</td><td>0.250%</td><td>0.227%</td><td>0.208%</td></tr>
+  <tr><td>고래돌</td><td>B</td><td>-</td><td>-</td><td>-</td><td>0.250%</td><td>0.227%</td><td>0.208%</td></tr>
+  <tr><td>산호 화석</td><td>B</td><td>-</td><td>-</td><td>-</td><td>0.250%</td><td>0.227%</td><td>0.208%</td></tr>
+  <tr><td>수정</td><td>B</td><td>-</td><td>-</td><td>-</td><td>-</td><td>0.227%</td><td>0.208%</td></tr>
+  <tr><td>거북돌</td><td>B</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>0.208%</td></tr>
+  <tr><td>냥꼬리돌</td><td>B</td><td>0.500%</td><td>0.357%</td><td>0.294%</td><td>0.250%</td><td>0.227%</td><td>0.208%</td></tr>
+  <tr><td>팽이돌</td><td>B</td><td>0.500%</td><td>0.357%</td><td>0.294%</td><td>0.250%</td><td>0.227%</td><td>0.208%</td></tr>
+  <tr><td>맷돌돌</td><td>B</td><td>0.500%</td><td>0.357%</td><td>0.294%</td><td>0.250%</td><td>0.227%</td><td>0.208%</td></tr>
+  <tr><td>고사리 화석</td><td>B</td><td>0.500%</td><td>0.357%</td><td>0.294%</td><td>0.250%</td><td>0.227%</td><td>0.208%</td></tr>
+  <tr><td>공작석</td><td>B</td><td>0.500%</td><td>0.357%</td><td>0.294%</td><td>0.250%</td><td>0.227%</td><td>0.208%</td></tr>
+  <tr><td>장미석영</td><td>B</td><td>-</td><td>0.357%</td><td>0.294%</td><td>0.250%</td><td>0.227%</td><td>0.208%</td></tr>
+  <tr><td>호안석</td><td>B</td><td>-</td><td>-</td><td>0.294%</td><td>0.250%</td><td>0.227%</td><td>0.208%</td></tr>
+  <tr><td>터키석</td><td>B</td><td>-</td><td>-</td><td>-</td><td>0.250%</td><td>0.227%</td><td>0.208%</td></tr>
+  <tr><td>눈꽃 흑요석</td><td>B</td><td>-</td><td>-</td><td>-</td><td>-</td><td>0.227%</td><td>0.208%</td></tr>
+  <tr><td>사슴돌</td><td>B</td><td>0.500%</td><td>0.357%</td><td>0.294%</td><td>0.250%</td><td>0.227%</td><td>0.208%</td></tr>
+  <tr><td>늑대돌</td><td>B</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>0.208%</td></tr>
+  <tr><td>하트돌</td><td>C</td><td>0.625%</td><td>0.536%</td><td>0.500%</td><td>0.469%</td><td>0.441%</td><td>0.417%</td></tr>
+  <tr><td>식빵돌</td><td>C</td><td>0.625%</td><td>0.536%</td><td>0.500%</td><td>0.469%</td><td>0.441%</td><td>0.417%</td></tr>
+  <tr><td>연잎돌</td><td>C</td><td>-</td><td>0.536%</td><td>0.500%</td><td>0.469%</td><td>0.441%</td><td>0.417%</td></tr>
+  <tr><td>구름돌</td><td>C</td><td>-</td><td>0.536%</td><td>0.500%</td><td>0.469%</td><td>0.441%</td><td>0.417%</td></tr>
+  <tr><td>수달돌</td><td>C</td><td>-</td><td>-</td><td>0.500%</td><td>0.469%</td><td>0.441%</td><td>0.417%</td></tr>
+  <tr><td>바다유리</td><td>C</td><td>-</td><td>-</td><td>-</td><td>0.469%</td><td>0.441%</td><td>0.417%</td></tr>
+  <tr><td>눈사람돌</td><td>C</td><td>-</td><td>-</td><td>-</td><td>-</td><td>0.441%</td><td>0.417%</td></tr>
+  <tr><td>부엉이돌</td><td>C</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>0.417%</td></tr>
+  <tr><td>털실뭉치돌</td><td>C</td><td>0.625%</td><td>0.536%</td><td>0.500%</td><td>0.469%</td><td>0.441%</td><td>0.417%</td></tr>
+  <tr><td>생쥐돌</td><td>C</td><td>0.625%</td><td>0.536%</td><td>0.500%</td><td>0.469%</td><td>0.441%</td><td>0.417%</td></tr>
+  <tr><td>방울돌</td><td>C</td><td>0.625%</td><td>0.536%</td><td>0.500%</td><td>0.469%</td><td>0.441%</td><td>0.417%</td></tr>
+  <tr><td>윷가락돌</td><td>C</td><td>0.625%</td><td>0.536%</td><td>0.500%</td><td>0.469%</td><td>0.441%</td><td>0.417%</td></tr>
+  <tr><td>토끼돌</td><td>C</td><td>0.625%</td><td>0.536%</td><td>0.500%</td><td>0.469%</td><td>0.441%</td><td>0.417%</td></tr>
+  <tr><td>여우돌</td><td>C</td><td>0.625%</td><td>0.536%</td><td>0.500%</td><td>0.469%</td><td>0.441%</td><td>0.417%</td></tr>
+  <tr><td>곰돌</td><td>C</td><td>0.625%</td><td>0.536%</td><td>0.500%</td><td>0.469%</td><td>0.441%</td><td>0.417%</td></tr>
+  <tr><td>달팽이돌</td><td>C</td><td>0.625%</td><td>0.536%</td><td>0.500%</td><td>0.469%</td><td>0.441%</td><td>0.417%</td></tr>
+  <tr><td>금붕어돌</td><td>C</td><td>0.625%</td><td>0.536%</td><td>0.500%</td><td>0.469%</td><td>0.441%</td><td>0.417%</td></tr>
+  <tr><td>병아리돌</td><td>C</td><td>0.625%</td><td>0.536%</td><td>0.500%</td><td>0.469%</td><td>0.441%</td><td>0.417%</td></tr>
+  <tr><td>콩돌</td><td>D</td><td>1.591%</td><td>1.094%</td><td>0.921%</td><td>0.833%</td><td>0.700%</td><td>0.648%</td></tr>
+  <tr><td>개구리돌</td><td>D</td><td>1.591%</td><td>1.094%</td><td>0.921%</td><td>0.833%</td><td>0.700%</td><td>0.648%</td></tr>
+  <tr><td>현무암</td><td>D</td><td>1.591%</td><td>1.094%</td><td>0.921%</td><td>0.833%</td><td>0.700%</td><td>0.648%</td></tr>
+  <tr><td>오리돌</td><td>D</td><td>-</td><td>1.094%</td><td>0.921%</td><td>0.833%</td><td>0.700%</td><td>0.648%</td></tr>
+  <tr><td>주먹밥돌</td><td>D</td><td>-</td><td>1.094%</td><td>0.921%</td><td>0.833%</td><td>0.700%</td><td>0.648%</td></tr>
+  <tr><td>두부돌</td><td>D</td><td>1.591%</td><td>1.094%</td><td>0.921%</td><td>0.833%</td><td>0.700%</td><td>0.648%</td></tr>
+  <tr><td>도토리돌</td><td>D</td><td>1.591%</td><td>1.094%</td><td>0.921%</td><td>0.833%</td><td>0.700%</td><td>0.648%</td></tr>
+  <tr><td>알밤돌</td><td>D</td><td>1.591%</td><td>1.094%</td><td>0.921%</td><td>0.833%</td><td>0.700%</td><td>0.648%</td></tr>
+  <tr><td>연근돌</td><td>D</td><td>-</td><td>1.094%</td><td>0.921%</td><td>0.833%</td><td>0.700%</td><td>0.648%</td></tr>
+  <tr><td>올챙이돌</td><td>D</td><td>-</td><td>1.094%</td><td>0.921%</td><td>0.833%</td><td>0.700%</td><td>0.648%</td></tr>
+  <tr><td>나룻배돌</td><td>D</td><td>-</td><td>-</td><td>0.921%</td><td>0.833%</td><td>0.700%</td><td>0.648%</td></tr>
+  <tr><td>메기돌</td><td>D</td><td>-</td><td>-</td><td>0.921%</td><td>0.833%</td><td>0.700%</td><td>0.648%</td></tr>
+  <tr><td>갈매기알돌</td><td>D</td><td>-</td><td>-</td><td>-</td><td>0.833%</td><td>0.700%</td><td>0.648%</td></tr>
+  <tr><td>곶감돌</td><td>D</td><td>-</td><td>-</td><td>-</td><td>-</td><td>0.700%</td><td>0.648%</td></tr>
+  <tr><td>호빵돌</td><td>D</td><td>-</td><td>-</td><td>-</td><td>-</td><td>0.700%</td><td>0.648%</td></tr>
+  <tr><td>군고구마돌</td><td>D</td><td>-</td><td>-</td><td>-</td><td>-</td><td>0.700%</td><td>0.648%</td></tr>
+  <tr><td>송편돌</td><td>D</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>0.648%</td></tr>
+  <tr><td>공깃돌</td><td>D</td><td>1.591%</td><td>1.094%</td><td>0.921%</td><td>0.833%</td><td>0.700%</td><td>0.648%</td></tr>
+  <tr><td>마늘돌</td><td>D</td><td>1.591%</td><td>1.094%</td><td>0.921%</td><td>0.833%</td><td>0.700%</td><td>0.648%</td></tr>
+  <tr><td>솔방울돌</td><td>D</td><td>1.591%</td><td>1.094%</td><td>0.921%</td><td>0.833%</td><td>0.700%</td><td>0.648%</td></tr>
+  <tr><td>단추돌</td><td>D</td><td>1.591%</td><td>1.094%</td><td>0.921%</td><td>0.833%</td><td>0.700%</td><td>0.648%</td></tr>
+  <tr><td>감자돌</td><td>D</td><td>1.591%</td><td>1.094%</td><td>0.921%</td><td>0.833%</td><td>0.700%</td><td>0.648%</td></tr>
+  <tr><td>버섯돌</td><td>D</td><td>-</td><td>1.094%</td><td>0.921%</td><td>0.833%</td><td>0.700%</td><td>0.648%</td></tr>
+  <tr><td>만두돌</td><td>D</td><td>-</td><td>-</td><td>0.921%</td><td>0.833%</td><td>0.700%</td><td>0.648%</td></tr>
+  <tr><td>귤돌</td><td>D</td><td>-</td><td>-</td><td>-</td><td>0.833%</td><td>0.700%</td><td>0.648%</td></tr>
+  <tr><td>찹쌀떡돌</td><td>D</td><td>-</td><td>-</td><td>-</td><td>-</td><td>0.700%</td><td>0.648%</td></tr>
+  <tr><td>별사탕돌</td><td>D</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>0.648%</td></tr>
+  <tr><td>조약돌</td><td>E</td><td>11.500%</td><td>6.900%</td><td>4.929%</td><td>3.833%</td><td>3.286%</td><td>2.875%</td></tr>
+  <tr><td>납작돌</td><td>E</td><td>11.500%</td><td>6.900%</td><td>4.929%</td><td>3.833%</td><td>3.286%</td><td>2.875%</td></tr>
+  <tr><td>차돌</td><td>E</td><td>11.500%</td><td>6.900%</td><td>4.929%</td><td>3.833%</td><td>3.286%</td><td>2.875%</td></tr>
+  <tr><td>화강암</td><td>E</td><td>11.500%</td><td>6.900%</td><td>4.929%</td><td>3.833%</td><td>3.286%</td><td>2.875%</td></tr>
+  <tr><td>강자갈</td><td>E</td><td>-</td><td>6.900%</td><td>4.929%</td><td>3.833%</td><td>3.286%</td><td>2.875%</td></tr>
+  <tr><td>달걀돌</td><td>E</td><td>-</td><td>6.900%</td><td>4.929%</td><td>3.833%</td><td>3.286%</td><td>2.875%</td></tr>
+  <tr><td>점판암</td><td>E</td><td>-</td><td>6.900%</td><td>4.929%</td><td>3.833%</td><td>3.286%</td><td>2.875%</td></tr>
+  <tr><td>물방울돌</td><td>E</td><td>11.500%</td><td>6.900%</td><td>4.929%</td><td>3.833%</td><td>3.286%</td><td>2.875%</td></tr>
+  <tr><td>사암</td><td>E</td><td>-</td><td>-</td><td>4.929%</td><td>3.833%</td><td>3.286%</td><td>2.875%</td></tr>
+  <tr><td>편마암</td><td>E</td><td>-</td><td>-</td><td>4.929%</td><td>3.833%</td><td>3.286%</td><td>2.875%</td></tr>
+  <tr><td>이암</td><td>E</td><td>-</td><td>-</td><td>4.929%</td><td>3.833%</td><td>3.286%</td><td>2.875%</td></tr>
+  <tr><td>몽돌</td><td>E</td><td>-</td><td>-</td><td>-</td><td>3.833%</td><td>3.286%</td><td>2.875%</td></tr>
+  <tr><td>규암</td><td>E</td><td>-</td><td>-</td><td>-</td><td>3.833%</td><td>3.286%</td><td>2.875%</td></tr>
+  <tr><td>깨소금돌</td><td>E</td><td>-</td><td>-</td><td>-</td><td>3.833%</td><td>3.286%</td><td>2.875%</td></tr>
+  <tr><td>대리암</td><td>E</td><td>-</td><td>-</td><td>-</td><td>-</td><td>3.286%</td><td>2.875%</td></tr>
+  <tr><td>석회암</td><td>E</td><td>-</td><td>-</td><td>-</td><td>-</td><td>3.286%</td><td>2.875%</td></tr>
+  <tr><td>응회암</td><td>E</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>2.875%</td></tr>
+  <tr><td>흑연</td><td>E</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>2.875%</td></tr>
+  <tr><td>부싯돌</td><td>E</td><td>11.500%</td><td>6.900%</td><td>4.929%</td><td>3.833%</td><td>3.286%</td><td>2.875%</td></tr>
+  <tr><td>셰일</td><td>E</td><td>-</td><td>6.900%</td><td>4.929%</td><td>3.833%</td><td>3.286%</td><td>2.875%</td></tr>
+  <tr><td>역암</td><td>E</td><td>-</td><td>-</td><td>4.929%</td><td>3.833%</td><td>3.286%</td><td>2.875%</td></tr>
+  <tr><td>사문암</td><td>E</td><td>-</td><td>-</td><td>-</td><td>3.833%</td><td>3.286%</td><td>2.875%</td></tr>
+  <tr><td>안산암</td><td>E</td><td>-</td><td>-</td><td>-</td><td>-</td><td>3.286%</td><td>2.875%</td></tr>
+  <tr><td>부석</td><td>E</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>2.875%</td></tr>
+</table>
+</div>
+
+<h2>4. 이번 주 조개</h2>
+<p>한국 시간 월요일 0시마다 아래 차례의 돌 하나가 진주 뽑기(광고 무료 뽑기 포함)에서 같은 등급 다른 돌의 3배 무게를 받습니다. 등급 확률 · 천장 · 11회 확정 · 동전 뽑기는 그대로입니다. 차례를 바꿀 때는 바뀌는 내용과 날을 이 페이지와 게임 안에 먼저 알립니다.</p>
+<h3>이번 주 조개가 든 등급: 그 돌 / 같은 등급 다른 돌</h3>
+<div class="wrap">
+<table>
+  <tr><th>등급</th><th>앞마을 개울까지</th><th>연꽃 저수지까지</th><th>큰 강 나루까지</th><th>몽돌 바닷가까지</th><th>겨울 호수까지</th><th>달빛 호수까지</th></tr>
+  <tr><td>SS+</td><td>0.120% / 0.0400%</td><td>0.120% / 0.0400%</td><td>0.120% / 0.0400%</td><td>0.120% / 0.0400%</td><td>0.120% / 0.0400%</td><td>0.115% / 0.0385%</td></tr>
+  <tr><td>SS</td><td>0.118% / 0.0395%</td><td>0.118% / 0.0395%</td><td>0.118% / 0.0395%</td><td>0.118% / 0.0395%</td><td>0.118% / 0.0395%</td><td>0.118% / 0.0395%</td></tr>
+  <tr><td>S</td><td>0.170% / 0.0568%</td><td>0.170% / 0.0568%</td><td>0.170% / 0.0568%</td><td>0.170% / 0.0568%</td><td>0.166% / 0.0553%</td><td>0.158% / 0.0525%</td></tr>
+</table>
+</div>
+<h3>차례 (2026-11-09부터 66주, 그 뒤 같은 차례를 되풀이)</h3>
+<div class="wrap">
+<table>
+  <tr><th>시작일</th><th>돌</th><th>등급</th></tr>
+  <tr><td>2026-11-09</td><td>산신령</td><td>SS</td></tr>
+  <tr><td>2026-11-16</td><td>금두꺼비</td><td>SS</td></tr>
+  <tr><td>2026-11-23</td><td>금거북</td><td>SS</td></tr>
+  <tr><td>2026-11-30</td><td>돌하르방</td><td>S</td></tr>
+  <tr><td>2026-12-07</td><td>청자</td><td>SS</td></tr>
+  <tr><td>2026-12-14</td><td>거북선</td><td>SS</td></tr>
+  <tr><td>2026-12-21</td><td>다보탑</td><td>SS</td></tr>
+  <tr><td>2026-12-28</td><td>범종</td><td>S</td></tr>
+  <tr><td>2027-01-04</td><td>옥새</td><td>S</td></tr>
+  <tr><td>2027-01-11</td><td>여의주</td><td>SS+</td></tr>
+  <tr><td>2027-01-18</td><td>왕관냥</td><td>SS+</td></tr>
+  <tr><td>2027-01-25</td><td>황금냥</td><td>SS+</td></tr>
+  <tr><td>2027-02-01</td><td>장군냥</td><td>SS+</td></tr>
+  <tr><td>2027-02-08</td><td>임금냥</td><td>SS+</td></tr>
+  <tr><td>2027-02-15</td><td>은하</td><td>SS+</td></tr>
+  <tr><td>2027-02-22</td><td>일식</td><td>SS</td></tr>
+  <tr><td>2027-03-01</td><td>화산</td><td>SS</td></tr>
+  <tr><td>2027-03-08</td><td>낮잠냥돌</td><td>S</td></tr>
+  <tr><td>2027-03-15</td><td>멍멍이돌</td><td>S</td></tr>
+  <tr><td>2027-03-22</td><td>퍼그돌</td><td>S</td></tr>
+  <tr><td>2027-03-29</td><td>양돌</td><td>S</td></tr>
+  <tr><td>2027-04-05</td><td>알파카돌</td><td>S</td></tr>
+  <tr><td>2027-04-12</td><td>햄스터돌</td><td>S</td></tr>
+  <tr><td>2027-04-19</td><td>고슴도치돌</td><td>S</td></tr>
+  <tr><td>2027-04-26</td><td>다람쥐돌</td><td>S</td></tr>
+  <tr><td>2027-05-03</td><td>두더지돌</td><td>S</td></tr>
+  <tr><td>2027-05-10</td><td>카피바라돌</td><td>S</td></tr>
+  <tr><td>2027-05-17</td><td>판다돌</td><td>SS</td></tr>
+  <tr><td>2027-05-24</td><td>레서판다돌</td><td>SS</td></tr>
+  <tr><td>2027-05-31</td><td>코알라돌</td><td>S</td></tr>
+  <tr><td>2027-06-07</td><td>너구리돌</td><td>S</td></tr>
+  <tr><td>2027-06-14</td><td>나무늘보돌</td><td>S</td></tr>
+  <tr><td>2027-06-21</td><td>원숭이돌</td><td>S</td></tr>
+  <tr><td>2027-06-28</td><td>펭귄돌</td><td>SS</td></tr>
+  <tr><td>2027-07-05</td><td>바다코끼리돌</td><td>SS</td></tr>
+  <tr><td>2027-07-12</td><td>우파루파돌</td><td>SS</td></tr>
+  <tr><td>2027-07-19</td><td>꽃게돌</td><td>S</td></tr>
+  <tr><td>2027-07-26</td><td>개복치돌</td><td>S</td></tr>
+  <tr><td>2027-08-02</td><td>하마돌</td><td>S</td></tr>
+  <tr><td>2027-08-09</td><td>앵무새돌</td><td>SS</td></tr>
+  <tr><td>2027-08-16</td><td>딱따구리돌</td><td>SS</td></tr>
+  <tr><td>2027-08-23</td><td>동박새돌</td><td>SS</td></tr>
+  <tr><td>2027-08-30</td><td>참새돌</td><td>S</td></tr>
+  <tr><td>2027-09-06</td><td>꼬꼬닭돌</td><td>S</td></tr>
+  <tr><td>2027-09-13</td><td>무당벌레돌</td><td>SS</td></tr>
+  <tr><td>2027-09-20</td><td>장수풍뎅이돌</td><td>SS</td></tr>
+  <tr><td>2027-09-27</td><td>트리케라톱스돌</td><td>SS</td></tr>
+  <tr><td>2027-10-04</td><td>꿀벌돌</td><td>S</td></tr>
+  <tr><td>2027-10-11</td><td>코끼리돌</td><td>S</td></tr>
+  <tr><td>2027-10-18</td><td>냥발돌</td><td>SS</td></tr>
+  <tr><td>2027-10-25</td><td>운석</td><td>SS</td></tr>
+  <tr><td>2027-11-01</td><td>공룡알</td><td>S</td></tr>
+  <tr><td>2027-11-08</td><td>녹주석</td><td>S</td></tr>
+  <tr><td>2027-11-15</td><td>해태돌</td><td>SS</td></tr>
+  <tr><td>2027-11-22</td><td>삼색이돌</td><td>S</td></tr>
+  <tr><td>2027-11-29</td><td>첨성대돌</td><td>S</td></tr>
+  <tr><td>2027-12-06</td><td>황철석</td><td>SS</td></tr>
+  <tr><td>2027-12-13</td><td>삼족오돌</td><td>SS</td></tr>
+  <tr><td>2027-12-20</td><td>호랑이돌</td><td>SS+</td></tr>
+  <tr><td>2027-12-27</td><td>청룡</td><td>SS+</td></tr>
+  <tr><td>2028-01-03</td><td>주작</td><td>SS+</td></tr>
+  <tr><td>2028-01-10</td><td>봉황</td><td>SS+</td></tr>
+  <tr><td>2028-01-17</td><td>기린</td><td>SS</td></tr>
+  <tr><td>2028-01-24</td><td>불가사리</td><td>S</td></tr>
+  <tr><td>2028-01-31</td><td>구미호</td><td>SS+</td></tr>
+  <tr><td>2028-02-07</td><td>도깨비</td><td>SS+</td></tr>
+</table>
+</div>
+</main>
+</body>
+</html>
